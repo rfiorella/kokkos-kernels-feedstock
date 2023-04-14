@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('kokkos-kernels') }}
 
@@ -23,9 +23,9 @@ requirements:
     - libgomp      # [linux]
     - ninja
   host:
-    - kokkos
+    - kokkos >=3.7.0,<4
   run:
-    - kokkos
+    - kokkos >=3.7.0,<4
 
 test:
   source_files:
