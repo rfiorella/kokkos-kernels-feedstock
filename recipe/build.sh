@@ -1,5 +1,5 @@
 
-cmake -S ${SRC_DIR} -B build \
+cmake ${CMAKE_ARGS} -S ${SRC_DIR} -B build \
 -GNinja \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX=$PREFIX \
