@@ -23,9 +23,9 @@ requirements:
     - libgomp      # [linux]
     - ninja
   host:
-    - kokkos >=3.7.0,<4
+    - kokkos >=4.0.0,<5
   run:
-    - kokkos >=3.7.0,<4
+    - kokkos >=4.0.0,<5
 
 test:
   source_files:
