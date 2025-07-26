@@ -23,7 +23,7 @@ requirements:
     - {{ stdlib('c') }}
     - ninja
   host:
-    - {{ mpi }} # [unix]
+    - {{ mpi }}  # [unix]
     - kokkos >=4.0.0,<5
   run:
     - kokkos >=4.0.0,<5
