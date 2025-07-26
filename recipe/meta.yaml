@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/kokkos/kokkos-kernels/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/kokkos/kokkos-kernels/archive/refs/tags/kokkos-kernels-{{ version }}.tar.gz
   sha256: a953f445660ed5aaab10e18fc4a90c4c178291e9d9d97d20abd4e6027f1193ec 
 
 build:
