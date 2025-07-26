@@ -1,6 +1,6 @@
 {% set name = "kokkos-kernels" %}
-{% set version = "4.1.00" %}
-{% set so_version = "4.1.00" %}
+{% set version = "4.6.02" %}
+{% set so_version = "4.6.02" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,10 @@ requirements:
   build:
     - cmake >=3.21.1,<4
     - {{ compiler('cxx') }}
-    - llvm-openmp  # [osx]
-    - libgomp      # [linux]
+    - {{ stdlib('c') }}
     - ninja
   host:
+    - {{ mpi }} # [unix]
     - kokkos >=4.0.0,<5
   run:
     - kokkos >=4.0.0,<5
