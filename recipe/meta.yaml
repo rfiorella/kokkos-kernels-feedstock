@@ -23,10 +23,14 @@ requirements:
     - {{ stdlib('c') }}
     - ninja
   host:
-    - {{ mpi }}  # [unix]
+    - libgomp  # [linux]
+    - llvm-openmp  # [osx]
     - kokkos >=4.0.0,<5
+    - _openmp_mutex  # [linux]
   run:
     - kokkos >=4.0.0,<5
+    - libgomp  # [linux]
+    - llvm-openmp  # [osx]
 
 test:
   source_files:
