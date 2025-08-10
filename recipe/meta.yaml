@@ -27,9 +27,9 @@ requirements:
   host:
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
-    - kokkos >=4.0.0,<5
+    - kokkos >=4.2.0,<5
   run:
-    - kokkos >=4.0.0,<5
+    - kokkos >=4.2.0,<5
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
 

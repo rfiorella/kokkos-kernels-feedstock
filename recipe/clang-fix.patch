@@ -1,9 +1,0 @@
-diff --git a/sparse/src/KokkosSparse_spadd_handle.hpp b/sparse/src/KokkosSparse_spadd_handle.hpp
-@@ class SPADDHandle<...> {
--  void set_sort_option(int option) { this->sort_option = option; }
--  int get_sort_option() { return this->sort_option; }
-+  void set_sort_option(int option) { sort_option_ = option; }
-+  int get_sort_option() const { return sort_option_; }
-+
-+private:
-+  int sort_option_ = 0;  // 0: no sort, 1: sort by row/col (match your usage)
