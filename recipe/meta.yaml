@@ -1,6 +1,6 @@
 {% set name = "kokkos-kernels" %}
-{% set version = "4.2.01" %}
-{% set so_version = "4.2.01" %}
+{% set version = "4.5.01" %}
+{% set so_version = "4.5.01" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/kokkos/kokkos-kernels/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 058052b3a40f5d4e447b7ded5c480f1b0d4aa78373b0bc7e43804d0447c34ca8
+  sha256: c111a6561f23a85af9850d1df1e9015f37a586f1da0be4b6fb1e98001d75e074
   patches:
     - recent-compiler-fix.patch  # [osx]
 
@@ -27,9 +27,9 @@ requirements:
   host:
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
-    - kokkos ==4.2.01
+    - kokkos ==4.5.01
   run:
-    - kokkos ==4.2.01
+    - kokkos ==4.5.01
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
 
