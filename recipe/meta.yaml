@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/kokkos/kokkos-kernels/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c111a6561f23a85af9850d1df1e9015f37a586f1da0be4b6fb1e98001d75e074
+  sha256: da574b21b0c381890fd62fb504e74bf9963a5cdde70902456ad540e7ac096737 
   patches:
     - recent-compiler-fix.patch  # [osx]
 
