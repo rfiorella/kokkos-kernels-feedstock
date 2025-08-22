@@ -1,5 +1,7 @@
 set -ex
 
+exit 1
+
 cmake ${CMAKE_ARGS} -S ${SRC_DIR} -B build \
 -GNinja \
 -DCMAKE_BUILD_TYPE=Release \
