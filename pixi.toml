@@ -58,13 +58,13 @@ description = "List contents of kokkos-kernels-feedstock packages built for vari
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
-[target.linux-64.feature.smithy.dependencies]
+[feature.smithy.target.linux-64.dependencies]
 shellcheck = "*"
-[target.linux-aarch64.feature.smithy.dependencies]
+[feature.smithy.target.linux-aarch64.dependencies]
 shellcheck = "*"
-[target.osx-64.feature.smithy.dependencies]
+[feature.smithy.target.osx-64.dependencies]
 shellcheck = "*"
-[target.osx-arm64.feature.smithy.dependencies]
+[feature.smithy.target.osx-arm64.dependencies]
 shellcheck = "*"
 [feature.smithy.tasks.build-locally]
 cmd = "python ./build-locally.py"
