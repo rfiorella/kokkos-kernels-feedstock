@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: kokkos-kernels
   version: "4.7.01"
-  so_version: 4.6.02
 
 package:
   name: ${{ name|lower }}
@@ -28,9 +27,9 @@ requirements:
       then: libgomp
     - if: osx
       then: llvm-openmp
-    - kokkos >=4.0.0,<5
+    - kokkos >=4.6.01,<5
   run:
-    - kokkos >=4.0.0,<5
+    - kokkos >=4.6.01,<5
     - if: linux
       then: libgomp
     - if: osx
